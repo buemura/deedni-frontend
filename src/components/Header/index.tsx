@@ -6,10 +6,10 @@ export default function Header() {
       </a>
 
       <div className="flex gap-4">
-        <a className="font-light hover:text-blue-600" href="/cadidate/login">
+        <a className="font-light hover:text-blue-600" href="/cadidates/login">
           Candidates
         </a>
-        <a className="font-light hover:text-blue-600" href="/employer/login">
+        <a className="font-light hover:text-blue-600" href="/employers/login">
           Employers
         </a>
       </div>
