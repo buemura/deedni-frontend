@@ -7,6 +7,10 @@ interface JobListProps {
 }
 
 export default function JobList({ jobs, setSelectedJob }: JobListProps) {
+  if (!jobs.length) {
+    return <span>No jobs found...</span>;
+  }
+
   return (
     <ul className="flex flex-col">
       {jobs?.map((job) => (
