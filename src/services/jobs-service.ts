@@ -12,4 +12,9 @@ const getJobs = async ({ title, location }: getJobsQuery) => {
   return res.json();
 };
 
-export const jobsService = { getJobs };
+const getJobById = async (id: number) => {
+  const res = await fetch(`${baseUrl}/api/jobs/${id}`);
+  return res.json();
+};
+
+export const jobsService = { getJobs, getJobById };

@@ -10,8 +10,6 @@ export default function Jobs() {
   const { jobs, setJobs, selectedJob, setSelectedJob } = useJobsStore();
   const { searchTitle, searchLocation } = useSearchStore();
 
-  // const [selectedJob, setSelectedJob] = useState<Job>();
-
   const fetchJobs = async () => {
     const result = await jobsService.getJobs({
       title: searchTitle,
